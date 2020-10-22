@@ -1,14 +1,14 @@
 # SwiftDataTypes
 ## This app includes information about the swift basic data types as:
-:arrow_right: Int
-:arrow_right: UInt
-:arrow_right: Float
-:arrow_right: Double
-:arrow_right: String
-:arrow_right: Bool
-:arrow_right: Character
-:arrow_right: Optional
-:arrow_right: Tuples
+:arrow_right: Int<br/>
+:arrow_right: UInt<br/>
+:arrow_right: Float<br/>
+:arrow_right: Double<br/>
+:arrow_right: String<br/>
+:arrow_right: Bool<br/>
+:arrow_right: Character<br/>
+:arrow_right: Optional<br/>
+:arrow_right: Tuples<br/>
 ## Screenshots
 ![screen-1](https://github.com/Tambanco/SwiftDataTypes/raw/master/screen1.jpg)
 ## Features
