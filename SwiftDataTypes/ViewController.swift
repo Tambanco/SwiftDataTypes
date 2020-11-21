@@ -8,7 +8,8 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController
+{
     
     @IBOutlet weak var descriptionView: UITextView!
     @IBOutlet weak var headerName: UILabel!
@@ -30,7 +31,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var optionalButtonLabel: UIButton!
     @IBOutlet weak var tuplesButtonLabel: UIButton!
     
-    override func viewDidLoad() {
+    override func viewDidLoad()
+    {
         super.viewDidLoad()
         
         headerName.text = "Swift Data Types"
@@ -96,9 +98,11 @@ class ViewController: UIViewController {
         
     }
     
-    @IBAction func buttonPressed(_ sender: UIButton) {
+    @IBAction func buttonPressed(_ sender: UIButton)
+    {
         
-        switch sender.tag {
+        switch sender.tag
+        {
             
         case 1: //Int8
             
@@ -250,16 +254,15 @@ class ViewController: UIViewController {
         default:
             descriptionView.text = "default"
         }
-        
     }
-    @IBAction func copyButton(_ sender: UIButton) {
-        
+    
+    @IBAction func copyButton(_ sender: UIButton)
+    {
         let pasteBoard = UIPasteboard.general
         pasteBoard.string = descriptionView.text
         let alert = UIAlertController(title: "Successfully copied to clipboard", message: "", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true)
-        
     }
 }
 
