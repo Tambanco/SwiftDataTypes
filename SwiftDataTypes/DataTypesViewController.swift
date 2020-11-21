@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController
+class DataTypesViewController: UIViewController
 {
     
     @IBOutlet weak var descriptionView: UITextView!
