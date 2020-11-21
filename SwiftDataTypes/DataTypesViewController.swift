@@ -31,73 +31,6 @@ class DataTypesViewController: UIViewController
     @IBOutlet weak var optionalButtonLabel: UIButton!
     @IBOutlet weak var tuplesButtonLabel: UIButton!
     
-    override func viewDidLoad()
-    {
-        super.viewDidLoad()
-        
-        headerName.text = "Swift Data Types"
-        headerName.font = UIFont(name: "Noteworthy", size: 44)
-        headerName.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-        
-        int8ButtonLabel.layer.cornerRadius = int8ButtonLabel.frame.size.height/10
-        int8ButtonLabel.layer.masksToBounds = true
-        int16ButtonLabel.layer.cornerRadius = int16ButtonLabel.frame.size.height/10
-        int16ButtonLabel.layer.masksToBounds = true
-        int32ButtonLabel.layer.cornerRadius = int32ButtonLabel.frame.size.height/10
-        int32ButtonLabel.layer.masksToBounds = true
-        int64ButtonLabel.layer.cornerRadius = int64ButtonLabel.frame.size.height/10
-        int64ButtonLabel.layer.masksToBounds = true
-        uint8ButtonLabel.layer.cornerRadius = uint8ButtonLabel.frame.size.height/10
-        uint8ButtonLabel.layer.masksToBounds = true
-        uint16ButtonLabel.layer.cornerRadius = uint16ButtonLabel.frame.size.height/10
-        uint16ButtonLabel.layer.masksToBounds = true
-        uint32ButtonLabel.layer.cornerRadius = uint32ButtonLabel.frame.size.height/10
-        uint32ButtonLabel.layer.masksToBounds = true
-        uint64ButtonLabel.layer.cornerRadius = uint64ButtonLabel.frame.size.height/10
-        uint64ButtonLabel.layer.masksToBounds = true
-        floatButtonLabel.layer.cornerRadius = floatButtonLabel.frame.size.height/10
-        floatButtonLabel.layer.masksToBounds = true
-        doubleButtonLabel.layer.cornerRadius = doubleButtonLabel.frame.size.height/10
-        doubleButtonLabel.layer.masksToBounds = true
-        boolButtonLabel.layer.cornerRadius = boolButtonLabel.frame.size.height/10
-        boolButtonLabel.layer.masksToBounds = true
-        stringButtonLabel.layer.cornerRadius = stringButtonLabel.frame.size.height/10
-        stringButtonLabel.layer.masksToBounds = true
-        characterButtonLabel.layer.cornerRadius = characterButtonLabel.frame.size.height/10
-        characterButtonLabel.layer.masksToBounds = true
-        optionalButtonLabel.layer.cornerRadius = optionalButtonLabel.frame.size.height/10
-        optionalButtonLabel.layer.masksToBounds = true
-        tuplesButtonLabel.layer.cornerRadius = optionalButtonLabel.frame.size.height/10
-        tuplesButtonLabel.layer.masksToBounds = true
-        descriptionView.layer.cornerRadius = descriptionView.frame.size.height/40
-        descriptionView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        descriptionView.layer.masksToBounds = true
-        copyToClipboard.layer.cornerRadius = descriptionView.frame.size.width/40
-        copyToClipboard.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
-        copyToClipboard.layer.masksToBounds = true
-        copyToClipboard.setTitleColor(UIColor.white, for: .normal)
-        
-        view.setGradientBackground(colorOne: UIColor.init(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0), colorTwo: UIColor.init(red: 0.0, green: 0.0, blue: 1.0, alpha: 1.0))
-        
-        int8ButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
-        int16ButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
-        int32ButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
-        int64ButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
-        uint8ButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
-        uint16ButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
-        uint32ButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
-        uint64ButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
-        floatButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
-        doubleButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
-        boolButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
-        stringButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
-        characterButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
-        optionalButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
-        tuplesButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
-        copyToClipboard.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
-        
-    }
-    
     @IBAction func buttonPressed(_ sender: UIButton)
     {
         
@@ -263,6 +196,110 @@ class DataTypesViewController: UIViewController
         let alert = UIAlertController(title: "Successfully copied to clipboard", message: "", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true)
+    }
+}
+
+//MARK: - Life cycle
+extension DataTypesViewController
+{
+    override func viewDidLoad()
+    {
+        super.viewDidLoad()
+        
+        gradientBackground()
+        buttonsCustomizer()
+        gradientButton()
+        headerCustomizer()
+    }
+}
+
+//MARK: - Gradient buttons
+extension DataTypesViewController
+{
+    func gradientButton()
+    {
+        int8ButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
+        int16ButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
+        int32ButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
+        int64ButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
+        uint8ButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
+        uint16ButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
+        uint32ButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
+        uint64ButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
+        floatButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
+        doubleButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
+        boolButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
+        stringButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
+        characterButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
+        optionalButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
+        tuplesButtonLabel.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
+        copyToClipboard.setGradientBackground(colorOne: UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0), colorTwo: UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0))
+    }
+    
+}
+
+//MARK: - Create gradient background
+extension DataTypesViewController
+{
+    func gradientBackground()
+    {
+        view.setGradientBackground(colorOne: UIColor.init(red: 1.0, green: 0.0, blue: 0.0, alpha: 1.0), colorTwo: UIColor.init(red: 0.0, green: 0.0, blue: 1.0, alpha: 1.0))
+    }
+}
+
+//MARK: - Header Customizer
+extension DataTypesViewController
+{
+    func headerCustomizer()
+    {
+        headerName.text = "Swift Data Types"
+        headerName.font = UIFont(name: "Noteworthy", size: 44)
+        headerName.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
+    }
+}
+
+//MARK: - Customize buttons
+extension DataTypesViewController
+{
+    func buttonsCustomizer()
+    {
+        int8ButtonLabel.layer.cornerRadius = int8ButtonLabel.frame.size.height/10
+        int8ButtonLabel.layer.masksToBounds = true
+        int16ButtonLabel.layer.cornerRadius = int16ButtonLabel.frame.size.height/10
+        int16ButtonLabel.layer.masksToBounds = true
+        int32ButtonLabel.layer.cornerRadius = int32ButtonLabel.frame.size.height/10
+        int32ButtonLabel.layer.masksToBounds = true
+        int64ButtonLabel.layer.cornerRadius = int64ButtonLabel.frame.size.height/10
+        int64ButtonLabel.layer.masksToBounds = true
+        uint8ButtonLabel.layer.cornerRadius = uint8ButtonLabel.frame.size.height/10
+        uint8ButtonLabel.layer.masksToBounds = true
+        uint16ButtonLabel.layer.cornerRadius = uint16ButtonLabel.frame.size.height/10
+        uint16ButtonLabel.layer.masksToBounds = true
+        uint32ButtonLabel.layer.cornerRadius = uint32ButtonLabel.frame.size.height/10
+        uint32ButtonLabel.layer.masksToBounds = true
+        uint64ButtonLabel.layer.cornerRadius = uint64ButtonLabel.frame.size.height/10
+        uint64ButtonLabel.layer.masksToBounds = true
+        floatButtonLabel.layer.cornerRadius = floatButtonLabel.frame.size.height/10
+        floatButtonLabel.layer.masksToBounds = true
+        doubleButtonLabel.layer.cornerRadius = doubleButtonLabel.frame.size.height/10
+        doubleButtonLabel.layer.masksToBounds = true
+        boolButtonLabel.layer.cornerRadius = boolButtonLabel.frame.size.height/10
+        boolButtonLabel.layer.masksToBounds = true
+        stringButtonLabel.layer.cornerRadius = stringButtonLabel.frame.size.height/10
+        stringButtonLabel.layer.masksToBounds = true
+        characterButtonLabel.layer.cornerRadius = characterButtonLabel.frame.size.height/10
+        characterButtonLabel.layer.masksToBounds = true
+        optionalButtonLabel.layer.cornerRadius = optionalButtonLabel.frame.size.height/10
+        optionalButtonLabel.layer.masksToBounds = true
+        tuplesButtonLabel.layer.cornerRadius = optionalButtonLabel.frame.size.height/10
+        tuplesButtonLabel.layer.masksToBounds = true
+        descriptionView.layer.cornerRadius = descriptionView.frame.size.height/40
+        descriptionView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        descriptionView.layer.masksToBounds = true
+        copyToClipboard.layer.cornerRadius = descriptionView.frame.size.width/40
+        copyToClipboard.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        copyToClipboard.layer.masksToBounds = true
+        copyToClipboard.setTitleColor(UIColor.white, for: .normal)
     }
 }
 
