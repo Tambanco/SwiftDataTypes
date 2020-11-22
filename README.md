@@ -10,7 +10,7 @@
 :arrow_right: Optional<br/>
 :arrow_right: Tuples<br/>
 ## Screenshots
-![screen-1](https://github.com/Tambanco/SwiftDataTypes/raw/master/screen1.jpg)
+![screen-1](https://github.com/Tambanco/SwiftDataTypes/raw/master/Arhive/screen1.jpg)
 ## Features
 - [X] Copy to Clipboard button
 - [X] Highlighted text in UITextView
