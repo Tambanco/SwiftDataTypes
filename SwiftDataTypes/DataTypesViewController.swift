@@ -33,11 +33,12 @@ class DataTypesViewController: UIViewController
     @IBOutlet weak var tuplesButtonLabel: UIButton!
     
     //MARK: - Properties
-    let colorOneForButton = UIColor.init(red: 0.09, green: 0.47, blue: 0.73, alpha: 1.0)
-    let colorTwoForButton = UIColor.init(red: 1.0, green: 0.1, blue: 0.0, alpha: 1.0)
-    let colorOneForView = UIColor.init(red: 98/255, green: 39/255, blue: 116/255, alpha: 1.0)
-    let colorTwoForView = UIColor.init(red: 197/255, green: 51/255, blue: 100/255, alpha: 1.0)
+    let colorOneForButton = UIColor(rgb: 0xfc4a1a)
+    let colorTwoForButton = UIColor(rgb: 0xf7b733)
+    let colorOneForView = UIColor(rgb: 0x314755)
+    let colorTwoForView = UIColor(rgb: 0x26a0da)
     
+    //MARK: - Buttons Actions
     @IBAction func buttonPressed(_ sender: UIButton)
     {
         
@@ -195,7 +196,6 @@ class DataTypesViewController: UIViewController
             descriptionView.text = "default"
         }
     }
-    
     @IBAction func copyButton(_ sender: UIButton)
     {
         let pasteBoard = UIPasteboard.general
@@ -321,7 +321,7 @@ extension UIColor
        assert(green >= 0 && green <= 255, "Invalid green component")
        assert(blue >= 0 && blue <= 255, "Invalid blue component")
 
-       self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 1.0)
+       self.init(red: CGFloat(red) / 255.0, green: CGFloat(green) / 255.0, blue: CGFloat(blue) / 255.0, alpha: 0.8)
     }
 
    convenience init(rgb: Int)
