@@ -41,10 +41,8 @@ class DataTypesViewController: UIViewController
     //MARK: - Buttons Actions
     @IBAction func buttonPressed(_ sender: UIButton)
     {
-        
         switch sender.tag
         {
-            
         case 1: //Int8
             
             let string = "Typical Range: \(Int8.min) to \(Int8.max). \nTypical Bit Width: 1 byte. \nThis is used for whole numbers. More specifically, you can use Int32, Int64 to define 32 or 64 bit signed integer, whereas UInt32 or UInt64 to define 32 or 64 bit unsigned integer variables. For example, 42 and -23."
@@ -242,7 +240,6 @@ extension DataTypesViewController
         tuplesButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
         copyToClipboard.setGradientBackground(colorOneForButton, colorTwoForButton)
     }
-    
 }
 
 //MARK: - Create gradient background
@@ -343,7 +340,6 @@ extension UIView
         gradientLayer.locations = [0.0, 1.0]
         gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
         gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
-        
         layer.insertSublayer(gradientLayer, at: 0)
     }
 }
