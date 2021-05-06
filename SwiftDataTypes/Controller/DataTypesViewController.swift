@@ -109,34 +109,16 @@ class DataTypesViewController: UIViewController
             attributeStringWithTwoRange(descriptions.boolean, "true", "false")
             
         case 12: //String
-            let string = descriptions.string
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let value1 = (string as NSString).range(of: "Hello, World!")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: value1)
-            descriptionView.attributedText = attributedString
+            attributeStringWithOneRange(descriptions.string, "Hello, World!")
             
         case 13: //Character
-            let string = descriptions.character
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let value1 = (string as NSString).range(of: "A")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: value1)
-            descriptionView.attributedText = attributedString
+            attributeStringWithOneRange(descriptions.character, "A")
             
         case 14: //Optional
-            let string = descriptions.optional
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let value1 = (string as NSString).range(of: "value")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: value1)
-            let value2 = (string as NSString).range(of: "no value")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: value2)
-            descriptionView.attributedText = attributedString
+            attributeStringWithTwoRange(descriptions.optional, "value", "no value")
             
         case 15: //Tuples
-            let string = descriptions.tuples
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let tuple1 = (string as NSString).range(of: "let holliwoodActor = (" + "Tom Cruise" + ", 1962, 1.7, true)")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: tuple1)
-            descriptionView.attributedText = attributedString
+            attributeStringWithOneRange(descriptions.tuples, "let holliwoodActor = (" + "Tom Cruise" + ", 1962, 1.7, true)")
             
         default:
             descriptionView.text = "default"
@@ -151,6 +133,18 @@ class DataTypesViewController: UIViewController
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true)
     }
+}
+
+// MARK: - String with one range attributor
+extension DataTypesViewController
+{
+func attributeStringWithOneRange(_ string: String, _ rangeOne: String)
+{
+    let attributedString = NSMutableAttributedString.init(string: string)
+    let range = (string as NSString).range(of: rangeOne)
+    attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
+    descriptionView.attributedText = attributedString
+}
 }
 
     // MARK: - String with two range attributor
