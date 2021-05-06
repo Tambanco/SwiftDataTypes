@@ -14,5 +14,7 @@ extension DataTypesViewController
     func gradientButton(_ buttonLabel: UIButton, _ color1: UIColor, _ color2: UIColor)
     {
         buttonLabel.setGradientBackground(color1, color2)
+        buttonLabel.layer.cornerRadius = buttonLabel.frame.size.height/10
+        buttonLabel.layer.masksToBounds = true
     }
 }

@@ -207,32 +207,15 @@ class DataTypesViewController: UIViewController
     }
 }
 
-//MARK: - Life cycle
+    //MARK: - Life cycle
 extension DataTypesViewController
 {
     override func viewDidLoad()
     {
         super.viewDidLoad()
         
-        headerCustomizer()
-        
-        buttonsCustomizer(int8ButtonLabel)
-        buttonsCustomizer(int16ButtonLabel)
-        buttonsCustomizer(int32ButtonLabel)
-        buttonsCustomizer(int64ButtonLabel)
-        buttonsCustomizer(uint8ButtonLabel)
-        buttonsCustomizer(uint16ButtonLabel)
-        buttonsCustomizer(uint32ButtonLabel)
-        buttonsCustomizer(uint64ButtonLabel)
-        buttonsCustomizer(floatButtonLabel)
-        buttonsCustomizer(doubleButtonLabel)
-        buttonsCustomizer(boolButtonLabel)
-        buttonsCustomizer(stringButtonLabel)
-        buttonsCustomizer(characterButtonLabel)
-        buttonsCustomizer(optionalButtonLabel)
-        buttonsCustomizer(tuplesButtonLabel)
-        buttonsCustomizer(int8ButtonLabel)
-        
+        headerCustomizer(headerName, "Swift Data Types", "Noteworthy", 44, .white)
+
         gradientBackground(view, colorOneForView, colorTwoForView)
         gradientButton(int8ButtonLabel, colorOneForButton, colorTwoForButton)
         gradientButton(int16ButtonLabel, colorOneForButton, colorTwoForButton)
@@ -253,34 +236,10 @@ extension DataTypesViewController
         
         descriptionViewCustomizer(descriptionView)
         copyToClipboardCustomizer(copyToClipboard)
-        
-        
-        
     }
 }
 
-//MARK: - Header Customizer
-extension DataTypesViewController
-{
-    func headerCustomizer()
-    {
-        headerName.text = "Swift Data Types"
-        headerName.font = UIFont(name: "Noteworthy", size: 44)
-        headerName.textColor = #colorLiteral(red: 1.0, green: 1.0, blue: 1.0, alpha: 1.0)
-    }
-}
-
-//MARK: - Customize buttons
-extension DataTypesViewController
-{
-    func buttonsCustomizer(_ buttonLabel: UIButton)
-    {
-        buttonLabel.layer.cornerRadius = int8ButtonLabel.frame.size.height/10
-        buttonLabel.layer.masksToBounds = true
-    }
-}
-
-// MARK: - Customize copyToClipboard buttton
+    // MARK: - Customize copyToClipboard buttton
 extension DataTypesViewController
 {
     func copyToClipboardCustomizer(_ copyToClipboard: UIButton)
@@ -292,7 +251,7 @@ extension DataTypesViewController
     }
 }
 
-// MARK: - Customize description view
+    // MARK: - Customize description view
 extension DataTypesViewController
 {
     func descriptionViewCustomizer(_ descriptionView: UITextView)

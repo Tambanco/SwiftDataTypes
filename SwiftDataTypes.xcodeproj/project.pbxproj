@@ -12,6 +12,7 @@
 		49A781B22643E87200BC30BA /* Gradient background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A781B12643E87200BC30BA /* Gradient background.swift */; };
 		49A781B52643E8EC00BC30BA /* Convert hex to RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A781B42643E8EC00BC30BA /* Convert hex to RGB.swift */; };
 		49E74DA42643FAFF00EF9963 /* Gradient View background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E74DA32643FAFF00EF9963 /* Gradient View background.swift */; };
+		49E74DA72644061A00EF9963 /* Header Customizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E74DA62644061A00EF9963 /* Header Customizer.swift */; };
 		565F0B392539EB0A000F8A20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565F0B382539EB0A000F8A20 /* AppDelegate.swift */; };
 		565F0B3B2539EB0A000F8A20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565F0B3A2539EB0A000F8A20 /* SceneDelegate.swift */; };
 		565F0B3D2539EB0A000F8A20 /* DataTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565F0B3C2539EB0A000F8A20 /* DataTypesViewController.swift */; };
@@ -26,6 +27,7 @@
 		49A781B12643E87200BC30BA /* Gradient background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient background.swift"; sourceTree = "<group>"; };
 		49A781B42643E8EC00BC30BA /* Convert hex to RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Convert hex to RGB.swift"; sourceTree = "<group>"; };
 		49E74DA32643FAFF00EF9963 /* Gradient View background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient View background.swift"; sourceTree = "<group>"; };
+		49E74DA62644061A00EF9963 /* Header Customizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Header Customizer.swift"; sourceTree = "<group>"; };
 		565F0B352539EB0A000F8A20 /* SwiftDataTypes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataTypes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		565F0B382539EB0A000F8A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		565F0B3A2539EB0A000F8A20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +92,7 @@
 				49A781B12643E87200BC30BA /* Gradient background.swift */,
 				49A781B42643E8EC00BC30BA /* Convert hex to RGB.swift */,
 				49E74DA32643FAFF00EF9963 /* Gradient View background.swift */,
+				49E74DA62644061A00EF9963 /* Header Customizer.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -114,8 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				4984B4552643E09E00535F1D /* Model */,
-				4984B4572643E0A600535F1D /* Controller */,
 				4984B4592643E0B900535F1D /* View */,
+				4984B4572643E0A600535F1D /* Controller */,
 				49A781AC2643E80900BC30BA /* Extensions */,
 				4984B45A2643E0C400535F1D /* Supported files */,
 			);
@@ -197,6 +200,7 @@
 				4984B43E2643D3F800535F1D /* Description.swift in Sources */,
 				49E74DA42643FAFF00EF9963 /* Gradient View background.swift in Sources */,
 				565F0B3D2539EB0A000F8A20 /* DataTypesViewController.swift in Sources */,
+				49E74DA72644061A00EF9963 /* Header Customizer.swift in Sources */,
 				49A781B52643E8EC00BC30BA /* Convert hex to RGB.swift in Sources */,
 				565F0B392539EB0A000F8A20 /* AppDelegate.swift in Sources */,
 				49A781AE2643E82000BC30BA /* Gradient buttons.swift in Sources */,
