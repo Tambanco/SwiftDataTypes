@@ -39,177 +39,7 @@ class DataTypesViewController: UIViewController
     let colorOneForButton = UIColor(rgb: 0xfc4a1a)
     let colorTwoForButton = UIColor(rgb: 0xf7b733)
     
-    
-    //MARK: - Buttons Actions
-    @IBAction func buttonPressed(_ sender: UIButton)
-    {
-        switch sender.tag
-        {
-        case 1: //Int8
-            
-            let string = descriptions.int8
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let range = (string as NSString).range(of: "Typical Range:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
-            let bitWidth = (string as NSString).range(of: "Typical Bit Width:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: bitWidth)
-            descriptionView.attributedText = attributedString
-            descriptionView.isUserInteractionEnabled = true
-            descriptionView.isEditable = false
-            
-        case 2: //Int16
-            let string = descriptions.int16
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let range = (string as NSString).range(of: "Typical Range:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
-            let bitWidth = (string as NSString).range(of: "Typical Bit Width:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: bitWidth)
-            descriptionView.attributedText = attributedString
-            descriptionView.isUserInteractionEnabled = true
-            descriptionView.isEditable = false
-        case 3: //Int32
-            let string = descriptions.int32
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let range = (string as NSString).range(of: "Typical Range:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
-            let bitWidth = (string as NSString).range(of: "Typical Bit Width:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: bitWidth)
-            descriptionView.attributedText = attributedString
-            descriptionView.isUserInteractionEnabled = true
-            descriptionView.isEditable = false
-        case 4: //Int64
-            let string = descriptions.int64
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let range = (string as NSString).range(of: "Typical Range:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
-            let bitWidth = (string as NSString).range(of: "Typical Bit Width:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: bitWidth)
-            descriptionView.attributedText = attributedString
-            descriptionView.isUserInteractionEnabled = true
-            descriptionView.isEditable = false
-        case 5: // UInt8
-            //uint8ButtonLabel.isSelected = true
-            let string = descriptions.uInt8
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let range = (string as NSString).range(of: "Typical Range:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
-            let bitWidth = (string as NSString).range(of: "Typical Bit Width:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: bitWidth)
-            descriptionView.attributedText = attributedString
-            descriptionView.isUserInteractionEnabled = true
-            descriptionView.isEditable = false
-        case 6: // UInt16
-            let string = descriptions.uInt16
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let range = (string as NSString).range(of: "Typical Range:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
-            let bitWidth = (string as NSString).range(of: "Typical Bit Width:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: bitWidth)
-            descriptionView.attributedText = attributedString
-            descriptionView.isUserInteractionEnabled = true
-            descriptionView.isEditable = false
-        case 7: // UInt32
-            let string = descriptions.uInt32
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let range = (string as NSString).range(of: "Typical Range:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
-            let bitWidth = (string as NSString).range(of: "Typical Bit Width:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: bitWidth)
-            descriptionView.attributedText = attributedString
-            descriptionView.isUserInteractionEnabled = true
-            descriptionView.isEditable = false
-        case 8: // UInt64
-            let string = descriptions.uInt64
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let range = (string as NSString).range(of: "Typical Range:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
-            let bitWidth = (string as NSString).range(of: "Typical Bit Width:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: bitWidth)
-            descriptionView.attributedText = attributedString
-            descriptionView.isUserInteractionEnabled = true
-            descriptionView.isEditable = false
-        case 9: //Float
-            let string = descriptions.float
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let range = (string as NSString).range(of: "Typical Range:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
-            let bitWidth = (string as NSString).range(of: "Typical Bit Width:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: bitWidth)
-            descriptionView.attributedText = attributedString
-            descriptionView.isUserInteractionEnabled = true
-            descriptionView.isEditable = false
-        case 10: //Double
-            let string = descriptions.double
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let range = (string as NSString).range(of: "Typical Range:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
-            let bitWidth = (string as NSString).range(of: "Typical Bit Width:")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: bitWidth)
-            descriptionView.attributedText = attributedString
-            descriptionView.isUserInteractionEnabled = true
-            descriptionView.isEditable = false
-        case 11: //Bool
-            let string = descriptions.boolean
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let value1 = (string as NSString).range(of: "true")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: value1)
-            let value2 = (string as NSString).range(of: "false")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: value2)
-            descriptionView.attributedText = attributedString
-            descriptionView.isUserInteractionEnabled = true
-            descriptionView.isEditable = false
-        case 12: //String
-            let string = descriptions.string
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let value1 = (string as NSString).range(of: "Hello, World!")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: value1)
-            descriptionView.attributedText = attributedString
-            descriptionView.isUserInteractionEnabled = true
-            descriptionView.isEditable = false
-        case 13: //Character
-            let string = descriptions.character
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let value1 = (string as NSString).range(of: "A")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: value1)
-            descriptionView.attributedText = attributedString
-            descriptionView.isUserInteractionEnabled = true
-            descriptionView.isEditable = false
-        case 14: //Optional
-            let string = descriptions.optional
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let value1 = (string as NSString).range(of: "value")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: value1)
-            let value2 = (string as NSString).range(of: "no value")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: value2)
-            descriptionView.attributedText = attributedString
-            descriptionView.isUserInteractionEnabled = true
-            descriptionView.isEditable = false
-        case 15: //Tuples
-            let string = descriptions.tuples
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let tuple1 = (string as NSString).range(of: "let holliwoodActor = (" + "Tom Cruise" + ", 1962, 1.7, true)")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: tuple1)
-            descriptionView.attributedText = attributedString
-            descriptionView.isUserInteractionEnabled = true
-            descriptionView.isEditable = false
-        default:
-            descriptionView.text = "default"
-        }
-    }
-    
-    @IBAction func copyButton(_ sender: UIButton)
-    {
-        let pasteBoard = UIPasteboard.general
-        pasteBoard.string = descriptionView.text
-        let alert = UIAlertController(title: "Successfully copied to clipboard", message: "", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
-        self.present(alert, animated: true)
-    }
-}
-
     //MARK: - Life cycle
-extension DataTypesViewController
-{
     override func viewDidLoad()
     {
         super.viewDidLoad()
@@ -237,6 +67,110 @@ extension DataTypesViewController
         descriptionViewCustomizer(descriptionView)
         copyToClipboardCustomizer(copyToClipboard)
     }
+    
+    
+
+    //MARK: - Buttons Actions
+    @IBAction func buttonPressed(_ sender: UIButton)
+    {
+        switch sender.tag
+        {
+        case 1: //Int8
+            attributeStringWithRange(descriptions.int8)
+            
+        case 2: //Int16
+            attributeStringWithRange(descriptions.int16)
+            
+        case 3: //Int32
+            attributeStringWithRange(descriptions.int32)
+            
+        case 4: //Int64
+            attributeStringWithRange(descriptions.int64)
+            
+        case 5: // UInt8
+            attributeStringWithRange(descriptions.uInt8)
+             
+        case 6: // UInt16
+            attributeStringWithRange(descriptions.uInt16)
+             
+        case 7: // UInt32
+            attributeStringWithRange(descriptions.uInt32)
+             
+        case 8: // UInt64
+            attributeStringWithRange(descriptions.uInt64)
+             
+        case 9: //Float
+            attributeStringWithRange(descriptions.float)
+             
+        case 10: //Double
+            attributeStringWithRange(descriptions.double)
+             
+        case 11: //Bool
+            let string = descriptions.boolean
+            let attributedString = NSMutableAttributedString.init(string: string)
+            let value1 = (string as NSString).range(of: "true")
+            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: value1)
+            let value2 = (string as NSString).range(of: "false")
+            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: value2)
+            descriptionView.attributedText = attributedString
+            
+        case 12: //String
+            let string = descriptions.string
+            let attributedString = NSMutableAttributedString.init(string: string)
+            let value1 = (string as NSString).range(of: "Hello, World!")
+            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: value1)
+            descriptionView.attributedText = attributedString
+            
+        case 13: //Character
+            let string = descriptions.character
+            let attributedString = NSMutableAttributedString.init(string: string)
+            let value1 = (string as NSString).range(of: "A")
+            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: value1)
+            descriptionView.attributedText = attributedString
+            
+        case 14: //Optional
+            let string = descriptions.optional
+            let attributedString = NSMutableAttributedString.init(string: string)
+            let value1 = (string as NSString).range(of: "value")
+            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: value1)
+            let value2 = (string as NSString).range(of: "no value")
+            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: value2)
+            descriptionView.attributedText = attributedString
+            
+        case 15: //Tuples
+            let string = descriptions.tuples
+            let attributedString = NSMutableAttributedString.init(string: string)
+            let tuple1 = (string as NSString).range(of: "let holliwoodActor = (" + "Tom Cruise" + ", 1962, 1.7, true)")
+            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: tuple1)
+            descriptionView.attributedText = attributedString
+            
+        default:
+            descriptionView.text = "default"
+        }
+    }
+    
+    @IBAction func copyButtonPressed(_ sender: UIButton)
+    {
+        let pasteBoard = UIPasteboard.general
+        pasteBoard.string = descriptionView.text
+        let alert = UIAlertController(title: "Successfully copied to clipboard", message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
+        self.present(alert, animated: true)
+    }
+}
+
+    // MARK: - String with range attributor
+extension DataTypesViewController
+{
+    func attributeStringWithRange(_ string: String)
+    {
+        let attributedString = NSMutableAttributedString.init(string: string)
+        let range = (string as NSString).range(of: "Typical Range:")
+        attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
+        let bitWidth = (string as NSString).range(of: "Typical Bit Width:")
+        attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: bitWidth)
+        descriptionView.attributedText = attributedString
+    }
 }
 
     // MARK: - Customize copyToClipboard buttton
@@ -259,6 +193,8 @@ extension DataTypesViewController
         descriptionView.layer.cornerRadius = descriptionView.frame.size.height/40
         descriptionView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         descriptionView.layer.masksToBounds = true
+        descriptionView.isUserInteractionEnabled = true
+        descriptionView.isEditable = false
     }
 }
 
