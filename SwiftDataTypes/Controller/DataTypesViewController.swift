@@ -76,43 +76,37 @@ class DataTypesViewController: UIViewController
         switch sender.tag
         {
         case 1: //Int8
-            attributeStringWithRange(descriptions.int8)
+            attributeStringWithTwoRange(descriptions.int8, "Typical Range:", "Typical Bit Width:")
             
         case 2: //Int16
-            attributeStringWithRange(descriptions.int16)
+            attributeStringWithTwoRange(descriptions.int16, "Typical Range:", "Typical Bit Width:")
             
         case 3: //Int32
-            attributeStringWithRange(descriptions.int32)
+            attributeStringWithTwoRange(descriptions.int32, "Typical Range:", "Typical Bit Width:")
             
         case 4: //Int64
-            attributeStringWithRange(descriptions.int64)
+            attributeStringWithTwoRange(descriptions.int64, "Typical Range:", "Typical Bit Width:")
             
         case 5: // UInt8
-            attributeStringWithRange(descriptions.uInt8)
+            attributeStringWithTwoRange(descriptions.uInt8, "Typical Range:", "Typical Bit Width:")
              
         case 6: // UInt16
-            attributeStringWithRange(descriptions.uInt16)
+            attributeStringWithTwoRange(descriptions.uInt16, "Typical Range:", "Typical Bit Width:")
              
         case 7: // UInt32
-            attributeStringWithRange(descriptions.uInt32)
+            attributeStringWithTwoRange(descriptions.uInt32, "Typical Range:", "Typical Bit Width:")
              
         case 8: // UInt64
-            attributeStringWithRange(descriptions.uInt64)
+            attributeStringWithTwoRange(descriptions.uInt64, "Typical Range:", "Typical Bit Width:")
              
         case 9: //Float
-            attributeStringWithRange(descriptions.float)
+            attributeStringWithTwoRange(descriptions.float, "Typical Range:", "Typical Bit Width:")
              
         case 10: //Double
-            attributeStringWithRange(descriptions.double)
+            attributeStringWithTwoRange(descriptions.double, "Typical Range:", "Typical Bit Width:")
              
         case 11: //Bool
-            let string = descriptions.boolean
-            let attributedString = NSMutableAttributedString.init(string: string)
-            let value1 = (string as NSString).range(of: "true")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: value1)
-            let value2 = (string as NSString).range(of: "false")
-            attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: value2)
-            descriptionView.attributedText = attributedString
+            attributeStringWithTwoRange(descriptions.boolean, "true", "false")
             
         case 12: //String
             let string = descriptions.string
@@ -159,15 +153,15 @@ class DataTypesViewController: UIViewController
     }
 }
 
-    // MARK: - String with range attributor
+    // MARK: - String with two range attributor
 extension DataTypesViewController
 {
-    func attributeStringWithRange(_ string: String)
+    func attributeStringWithTwoRange(_ string: String, _ rangeOne: String, _ rangeTwo: String)
     {
         let attributedString = NSMutableAttributedString.init(string: string)
-        let range = (string as NSString).range(of: "Typical Range:")
+        let range = (string as NSString).range(of: rangeOne)
         attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
-        let bitWidth = (string as NSString).range(of: "Typical Bit Width:")
+        let bitWidth = (string as NSString).range(of: rangeTwo)
         attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: bitWidth)
         descriptionView.attributedText = attributedString
     }
