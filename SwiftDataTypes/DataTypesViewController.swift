@@ -33,6 +33,7 @@ class DataTypesViewController: UIViewController
     @IBOutlet weak var tuplesButtonLabel: UIButton!
     
     //MARK: - Properties
+    let descriptions = Description()
     let colorOneForButton = UIColor(rgb: 0xfc4a1a)
     let colorTwoForButton = UIColor(rgb: 0xf7b733)
     let colorOneForView = UIColor(rgb: 0x314755)
@@ -45,7 +46,7 @@ class DataTypesViewController: UIViewController
         {
         case 1: //Int8
             
-            let string = "Typical Range: \(Int8.min) to \(Int8.max). \nTypical Bit Width: 1 byte. \nThis is used for whole numbers. More specifically, you can use Int32, Int64 to define 32 or 64 bit signed integer, whereas UInt32 or UInt64 to define 32 or 64 bit unsigned integer variables. For example, 42 and -23."
+            let string = descriptions.int8
             let attributedString = NSMutableAttributedString.init(string: string)
             let range = (string as NSString).range(of: "Typical Range:")
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
@@ -56,7 +57,7 @@ class DataTypesViewController: UIViewController
             descriptionView.isEditable = false
             
         case 2: //Int16
-            let string = "Typical Range: \(Int16.min) to \(Int16.max). \nTypical Bit Width: 2 bytes. \nThis is used for whole numbers. More specifically, you can use Int32, Int64 to define 32 or 64 bit signed integer, whereas UInt32 or UInt64 to define 32 or 64 bit unsigned integer variables. For example, 42 and -23."
+            let string = descriptions.int16
             let attributedString = NSMutableAttributedString.init(string: string)
             let range = (string as NSString).range(of: "Typical Range:")
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
@@ -66,7 +67,7 @@ class DataTypesViewController: UIViewController
             descriptionView.isUserInteractionEnabled = true
             descriptionView.isEditable = false
         case 3: //Int32
-            let string = "Typical Range: \(Int32.min) to \(Int32.max). \nTypical Bit Width: 4 bytes. \nThis is used for whole numbers. More specifically, you can use Int32, Int64 to define 32 or 64 bit signed integer, whereas UInt32 or UInt64 to define 32 or 64 bit unsigned integer variables. For example, 42 and -23."
+            let string = descriptions.int32
             let attributedString = NSMutableAttributedString.init(string: string)
             let range = (string as NSString).range(of: "Typical Range:")
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
@@ -76,7 +77,7 @@ class DataTypesViewController: UIViewController
             descriptionView.isUserInteractionEnabled = true
             descriptionView.isEditable = false
         case 4: //Int64
-            let string = "Typical Range: \(Int64.min) to \(Int64.max). \nTypical Bit Width: 8 bytes. \nThis is used for whole numbers. More specifically, you can use Int32, Int64 to define 32 or 64 bit signed integer, whereas UInt32 or UInt64 to define 32 or 64 bit unsigned integer variables. For example, 42 and -23."
+            let string = descriptions.int64
             let attributedString = NSMutableAttributedString.init(string: string)
             let range = (string as NSString).range(of: "Typical Range:")
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
@@ -87,7 +88,7 @@ class DataTypesViewController: UIViewController
             descriptionView.isEditable = false
         case 5: // UInt8
             //uint8ButtonLabel.isSelected = true
-            let string = "Typical Range: \(UInt8.min) to \(UInt8.max). \nTypical Bit Width: 1 byte. \nThis is used for whole numbers. More specifically, you can use Int32, Int64 to define 32 or 64 bit signed integer, whereas UInt32 or UInt64 to define 32 or 64 bit unsigned integer variables. For example, 42 and -23."
+            let string = descriptions.uInt8
             let attributedString = NSMutableAttributedString.init(string: string)
             let range = (string as NSString).range(of: "Typical Range:")
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
@@ -97,7 +98,7 @@ class DataTypesViewController: UIViewController
             descriptionView.isUserInteractionEnabled = true
             descriptionView.isEditable = false
         case 6: // UInt16
-            let string = "Typical Range: \(UInt16.min) to \(UInt16.max). \nTypical Bit Width: 2 bytes. \nThis is used for whole numbers. More specifically, you can use Int32, Int64 to define 32 or 64 bit signed integer, whereas UInt32 or UInt64 to define 32 or 64 bit unsigned integer variables. For example, 42 and -23."
+            let string = descriptions.uInt16
             let attributedString = NSMutableAttributedString.init(string: string)
             let range = (string as NSString).range(of: "Typical Range:")
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
@@ -107,7 +108,7 @@ class DataTypesViewController: UIViewController
             descriptionView.isUserInteractionEnabled = true
             descriptionView.isEditable = false
         case 7: // UInt32
-            let string = "Typical Range: \(UInt32.min) to \(UInt32.max). \nTypical Bit Width: 4 bytes. \nThis is used for whole numbers. More specifically, you can use Int32, Int64 to define 32 or 64 bit signed integer, whereas UInt32 or UInt64 to define 32 or 64 bit unsigned integer variables. For example, 42 and -23."
+            let string = descriptions.uInt32
             let attributedString = NSMutableAttributedString.init(string: string)
             let range = (string as NSString).range(of: "Typical Range:")
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
@@ -117,7 +118,7 @@ class DataTypesViewController: UIViewController
             descriptionView.isUserInteractionEnabled = true
             descriptionView.isEditable = false
         case 8: // UInt64
-            let string = "Typical Range: \(UInt64.min) to \(UInt64.max). \nTypical Bit Width: 8 bytes. \nThis is used for whole numbers. More specifically, you can use Int32, Int64 to define 32 or 64 bit signed integer, whereas UInt32 or UInt64 to define 32 or 64 bit unsigned integer variables. For example, 42 and -23."
+            let string = descriptions.uInt64
             let attributedString = NSMutableAttributedString.init(string: string)
             let range = (string as NSString).range(of: "Typical Range:")
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
@@ -127,7 +128,7 @@ class DataTypesViewController: UIViewController
             descriptionView.isUserInteractionEnabled = true
             descriptionView.isEditable = false
         case 9: //Float
-            let string = "Typical Range: \(Float.leastNormalMagnitude) to \(Float.greatestFiniteMagnitude). \nTypical Bit Width: 4 bytes. \nThis is used to represent a 32-bit floating-point number and numbers with smaller decimal points. For example, 3.14159, 0.1, and -273.158."
+            let string = descriptions.float
             let attributedString = NSMutableAttributedString.init(string: string)
             let range = (string as NSString).range(of: "Typical Range:")
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
@@ -137,7 +138,7 @@ class DataTypesViewController: UIViewController
             descriptionView.isUserInteractionEnabled = true
             descriptionView.isEditable = false
         case 10: //Double
-            let string = "Typical Range: \(Double.leastNormalMagnitude) to \(Double.greatestFiniteMagnitude). \nTypical Bit Width: 8 bytes. \nThis is used to represent a 64-bit floating-point number and used when floating-point values must be very large. For example, 3.14159, 0.1, and -273.158."
+            let string = descriptions.double
             let attributedString = NSMutableAttributedString.init(string: string)
             let range = (string as NSString).range(of: "Typical Range:")
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
@@ -147,7 +148,7 @@ class DataTypesViewController: UIViewController
             descriptionView.isUserInteractionEnabled = true
             descriptionView.isEditable = false
         case 11: //Bool
-            let string = "This represents a Boolean value which is either true or false."
+            let string = descriptions.boolean
             let attributedString = NSMutableAttributedString.init(string: string)
             let value1 = (string as NSString).range(of: "true")
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.red, range: value1)
@@ -157,7 +158,7 @@ class DataTypesViewController: UIViewController
             descriptionView.isUserInteractionEnabled = true
             descriptionView.isEditable = false
         case 12: //String
-            let string = "This is an ordered collection of characters. For example: Hello, World!"
+            let string = descriptions.string
             let attributedString = NSMutableAttributedString.init(string: string)
             let value1 = (string as NSString).range(of: "Hello, World!")
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: value1)
@@ -165,7 +166,7 @@ class DataTypesViewController: UIViewController
             descriptionView.isUserInteractionEnabled = true
             descriptionView.isEditable = false
         case 13: //Character
-            let string = "This is a single-character string literal. For example: A"
+            let string = descriptions.character
             let attributedString = NSMutableAttributedString.init(string: string)
             let value1 = (string as NSString).range(of: "A")
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: value1)
@@ -173,7 +174,7 @@ class DataTypesViewController: UIViewController
             descriptionView.isUserInteractionEnabled = true
             descriptionView.isEditable = false
         case 14: //Optional
-            let string = "This represents a variable that can hold either a value or no value."
+            let string = descriptions.optional
             let attributedString = NSMutableAttributedString.init(string: string)
             let value1 = (string as NSString).range(of: "value")
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: value1)
@@ -183,7 +184,7 @@ class DataTypesViewController: UIViewController
             descriptionView.isUserInteractionEnabled = true
             descriptionView.isEditable = false
         case 15: //Tuples
-            let string = "This is used to group multiple values in single Compound Value. For example: \nlet holliwoodActor = (" + "Tom Cruise" + ", 1962, 1.7, true)"
+            let string = descriptions.tuples
             let attributedString = NSMutableAttributedString.init(string: string)
             let tuple1 = (string as NSString).range(of: "let holliwoodActor = (" + "Tom Cruise" + ", 1962, 1.7, true)")
             attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: tuple1)
