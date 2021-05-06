@@ -213,10 +213,27 @@ extension DataTypesViewController
     {
         super.viewDidLoad()
         
-        gradientBackground()
+       
         buttonsCustomizer()
-        gradientButton(int8ButtonLabel, colorOneForButton, colorTwoForButton)
         headerCustomizer()
+        
+        gradientBackground(view, colorOneForView, colorTwoForView)
+        gradientButton(int8ButtonLabel, colorOneForButton, colorTwoForButton)
+        gradientButton(int16ButtonLabel, colorOneForButton, colorTwoForButton)
+        gradientButton(int32ButtonLabel, colorOneForButton, colorTwoForButton)
+        gradientButton(int64ButtonLabel, colorOneForButton, colorTwoForButton)
+        gradientButton(uint8ButtonLabel, colorOneForButton, colorTwoForButton)
+        gradientButton(uint16ButtonLabel, colorOneForButton, colorTwoForButton)
+        gradientButton(uint32ButtonLabel, colorOneForButton, colorTwoForButton)
+        gradientButton(uint64ButtonLabel, colorOneForButton, colorTwoForButton)
+        gradientButton(floatButtonLabel, colorOneForButton, colorTwoForButton)
+        gradientButton(doubleButtonLabel, colorOneForButton, colorTwoForButton)
+        gradientButton(boolButtonLabel, colorOneForButton, colorTwoForButton)
+        gradientButton(stringButtonLabel, colorOneForButton, colorTwoForButton)
+        gradientButton(characterButtonLabel, colorOneForButton, colorTwoForButton)
+        gradientButton(optionalButtonLabel, colorOneForButton, colorTwoForButton)
+        gradientButton(tuplesButtonLabel, colorOneForButton, colorTwoForButton)
+        gradientButton(copyToClipboard, colorOneForButton, colorTwoForButton)
     }
 }
 
@@ -226,31 +243,15 @@ extension DataTypesViewController
     func gradientButton(_ buttonLabel: UIButton, _ color1: UIColor, _ color2: UIColor)
     {
         buttonLabel.setGradientBackground(color1, color2)
-//        int8ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-//        int16ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-//        int32ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-//        int64ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-//        uint8ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-//        uint16ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-//        uint32ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-//        uint64ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-//        floatButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-//        doubleButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-//        boolButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-//        stringButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-//        characterButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-//        optionalButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-//        tuplesButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-//        copyToClipboard.setGradientBackground(colorOneForButton, colorTwoForButton)
     }
 }
 
 //MARK: - Create gradient background
 extension DataTypesViewController
 {
-    func gradientBackground()
+    func gradientBackground(_ view: UIView, _ color1: UIColor, _ color2: UIColor)
     {
-        view.setGradientBackground(colorOneForView, colorTwoForView)
+        view.setGradientBackground(color1, color2)
     }
 }
 
