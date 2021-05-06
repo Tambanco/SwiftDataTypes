@@ -11,12 +11,12 @@ import UIKit
 // MARK: - Customize description view
 extension DataTypesViewController
 {
-func descriptionViewCustomizer(_ descriptionView: UITextView)
-{
-    descriptionView.layer.cornerRadius = descriptionView.frame.size.height/40
-    descriptionView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-    descriptionView.layer.masksToBounds = true
-    descriptionView.isUserInteractionEnabled = true
-    descriptionView.isEditable = false
-}
+    func descriptionViewCustomizer(_ descriptionView: UITextView)
+    {
+        descriptionView.layer.cornerRadius = descriptionView.layer.frame.height * 0.1
+        descriptionView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        descriptionView.layer.masksToBounds = true
+        descriptionView.isUserInteractionEnabled = true
+        descriptionView.isEditable = false
+    }
 }

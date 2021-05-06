@@ -13,7 +13,7 @@ extension DataTypesViewController
 {
 func copyToClipboardCustomizer(_ copyToClipboard: UIButton)
 {
-    copyToClipboard.layer.cornerRadius = descriptionView.frame.size.width/40
+    copyToClipboard.layer.cornerRadius = 10
     copyToClipboard.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
     copyToClipboard.layer.masksToBounds = true
     copyToClipboard.setTitleColor(UIColor.white, for: .normal)

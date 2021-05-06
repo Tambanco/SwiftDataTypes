@@ -10,7 +10,6 @@ import UIKit
 
 class DataTypesViewController: UIViewController
 {
-    
     //MARK: - Outlets
     @IBOutlet weak var descriptionView: UITextView!
     @IBOutlet weak var headerName: UILabel!
