@@ -129,7 +129,7 @@ class DataTypesViewController: UIViewController
     {
         let pasteBoard = UIPasteboard.general
         pasteBoard.string = descriptionView.text
-        let alert = UIAlertController(title: "Successfully copied to clipboard", message: "", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Successfully copied to clipboard", message: "", preferredStyle: .actionSheet)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
         self.present(alert, animated: true)
     }
@@ -138,13 +138,13 @@ class DataTypesViewController: UIViewController
 // MARK: - String with one range attributor
 extension DataTypesViewController
 {
-func attributeStringWithOneRange(_ string: String, _ rangeOne: String)
-{
-    let attributedString = NSMutableAttributedString.init(string: string)
-    let range = (string as NSString).range(of: rangeOne)
-    attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
-    descriptionView.attributedText = attributedString
-}
+    func attributeStringWithOneRange(_ string: String, _ rangeOne: String)
+    {
+        let attributedString = NSMutableAttributedString.init(string: string)
+        let range = (string as NSString).range(of: rangeOne)
+        attributedString.addAttribute(NSAttributedString.Key.foregroundColor, value: UIColor.blue, range: range)
+        descriptionView.attributedText = attributedString
+    }
 }
 
     // MARK: - String with two range attributor

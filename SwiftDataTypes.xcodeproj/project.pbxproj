@@ -88,11 +88,11 @@
 		49A781AC2643E80900BC30BA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				49E74DA62644061A00EF9963 /* Header Customizer.swift */,
 				49A781AD2643E82000BC30BA /* Gradient buttons.swift */,
 				49A781B12643E87200BC30BA /* Gradient background.swift */,
 				49A781B42643E8EC00BC30BA /* Convert hex to RGB.swift */,
 				49E74DA32643FAFF00EF9963 /* Gradient View background.swift */,
-				49E74DA62644061A00EF9963 /* Header Customizer.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
