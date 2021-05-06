@@ -237,24 +237,6 @@ extension DataTypesViewController
     }
 }
 
-//MARK: - Gradient buttons
-extension DataTypesViewController
-{
-    func gradientButton(_ buttonLabel: UIButton, _ color1: UIColor, _ color2: UIColor)
-    {
-        buttonLabel.setGradientBackground(color1, color2)
-    }
-}
-
-//MARK: - Create gradient background
-extension DataTypesViewController
-{
-    func gradientBackground(_ view: UIView, _ color1: UIColor, _ color2: UIColor)
-    {
-        view.setGradientBackground(color1, color2)
-    }
-}
-
 //MARK: - Header Customizer
 extension DataTypesViewController
 {
