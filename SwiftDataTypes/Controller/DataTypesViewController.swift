@@ -196,6 +196,7 @@ class DataTypesViewController: UIViewController
             descriptionView.text = "default"
         }
     }
+    
     @IBAction func copyButton(_ sender: UIButton)
     {
         let pasteBoard = UIPasteboard.general
@@ -297,7 +298,7 @@ extension DataTypesViewController
 
 
 
-//MARK: - Set gradient color
+//MARK: - Gradient background
 extension UIView
 {
     func setGradientBackground(_ colorOne: UIColor, _ colorTwo: UIColor)
