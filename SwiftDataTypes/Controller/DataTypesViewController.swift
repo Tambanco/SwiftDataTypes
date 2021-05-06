@@ -214,9 +214,24 @@ extension DataTypesViewController
     {
         super.viewDidLoad()
         
-       
-        buttonsCustomizer()
         headerCustomizer()
+        
+        buttonsCustomizer(int8ButtonLabel)
+        buttonsCustomizer(int16ButtonLabel)
+        buttonsCustomizer(int32ButtonLabel)
+        buttonsCustomizer(int64ButtonLabel)
+        buttonsCustomizer(uint8ButtonLabel)
+        buttonsCustomizer(uint16ButtonLabel)
+        buttonsCustomizer(uint32ButtonLabel)
+        buttonsCustomizer(uint64ButtonLabel)
+        buttonsCustomizer(floatButtonLabel)
+        buttonsCustomizer(doubleButtonLabel)
+        buttonsCustomizer(boolButtonLabel)
+        buttonsCustomizer(stringButtonLabel)
+        buttonsCustomizer(characterButtonLabel)
+        buttonsCustomizer(optionalButtonLabel)
+        buttonsCustomizer(tuplesButtonLabel)
+        buttonsCustomizer(int8ButtonLabel)
         
         gradientBackground(view, colorOneForView, colorTwoForView)
         gradientButton(int8ButtonLabel, colorOneForButton, colorTwoForButton)
@@ -235,6 +250,12 @@ extension DataTypesViewController
         gradientButton(optionalButtonLabel, colorOneForButton, colorTwoForButton)
         gradientButton(tuplesButtonLabel, colorOneForButton, colorTwoForButton)
         gradientButton(copyToClipboard, colorOneForButton, colorTwoForButton)
+        
+        descriptionViewCustomizer(descriptionView)
+        copyToClipboardCustomizer(copyToClipboard)
+        
+        
+        
     }
 }
 
@@ -252,43 +273,18 @@ extension DataTypesViewController
 //MARK: - Customize buttons
 extension DataTypesViewController
 {
-    func buttonsCustomizer()
+    func buttonsCustomizer(_ buttonLabel: UIButton)
     {
-        int8ButtonLabel.layer.cornerRadius = int8ButtonLabel.frame.size.height/10
-        int8ButtonLabel.layer.masksToBounds = true
-        int16ButtonLabel.layer.cornerRadius = int16ButtonLabel.frame.size.height/10
-        int16ButtonLabel.layer.masksToBounds = true
-        int32ButtonLabel.layer.cornerRadius = int32ButtonLabel.frame.size.height/10
-        int32ButtonLabel.layer.masksToBounds = true
-        int64ButtonLabel.layer.cornerRadius = int64ButtonLabel.frame.size.height/10
-        int64ButtonLabel.layer.masksToBounds = true
-        uint8ButtonLabel.layer.cornerRadius = uint8ButtonLabel.frame.size.height/10
-        uint8ButtonLabel.layer.masksToBounds = true
-        uint16ButtonLabel.layer.cornerRadius = uint16ButtonLabel.frame.size.height/10
-        uint16ButtonLabel.layer.masksToBounds = true
-        uint32ButtonLabel.layer.cornerRadius = uint32ButtonLabel.frame.size.height/10
-        uint32ButtonLabel.layer.masksToBounds = true
-        uint64ButtonLabel.layer.cornerRadius = uint64ButtonLabel.frame.size.height/10
-        uint64ButtonLabel.layer.masksToBounds = true
-        floatButtonLabel.layer.cornerRadius = floatButtonLabel.frame.size.height/10
-        floatButtonLabel.layer.masksToBounds = true
-        doubleButtonLabel.layer.cornerRadius = doubleButtonLabel.frame.size.height/10
-        doubleButtonLabel.layer.masksToBounds = true
-        boolButtonLabel.layer.cornerRadius = boolButtonLabel.frame.size.height/10
-        boolButtonLabel.layer.masksToBounds = true
-        stringButtonLabel.layer.cornerRadius = stringButtonLabel.frame.size.height/10
-        stringButtonLabel.layer.masksToBounds = true
-        characterButtonLabel.layer.cornerRadius = characterButtonLabel.frame.size.height/10
-        characterButtonLabel.layer.masksToBounds = true
-        optionalButtonLabel.layer.cornerRadius = optionalButtonLabel.frame.size.height/10
-        optionalButtonLabel.layer.masksToBounds = true
-        tuplesButtonLabel.layer.cornerRadius = optionalButtonLabel.frame.size.height/10
-        tuplesButtonLabel.layer.masksToBounds = true
-        
-        descriptionView.layer.cornerRadius = descriptionView.frame.size.height/40
-        descriptionView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-        descriptionView.layer.masksToBounds = true
-        
+        buttonLabel.layer.cornerRadius = int8ButtonLabel.frame.size.height/10
+        buttonLabel.layer.masksToBounds = true
+    }
+}
+
+// MARK: - Customize copyToClipboard buttton
+extension DataTypesViewController
+{
+    func copyToClipboardCustomizer(_ copyToClipboard: UIButton)
+    {
         copyToClipboard.layer.cornerRadius = descriptionView.frame.size.width/40
         copyToClipboard.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         copyToClipboard.layer.masksToBounds = true
@@ -296,21 +292,19 @@ extension DataTypesViewController
     }
 }
 
-
-
-//MARK: - Gradient background
-extension UIView
+// MARK: - Customize description view
+extension DataTypesViewController
 {
-    func setGradientBackground(_ colorOne: UIColor, _ colorTwo: UIColor)
+    func descriptionViewCustomizer(_ descriptionView: UITextView)
     {
-        let gradientLayer = CAGradientLayer()
-        gradientLayer.frame = bounds
-        gradientLayer.colors = [colorOne.cgColor, colorTwo.cgColor]
-        gradientLayer.locations = [0.0, 1.0]
-        gradientLayer.startPoint = CGPoint(x: 0.0, y: 0.0)
-        gradientLayer.endPoint = CGPoint(x: 1.0, y: 1.0)
-        layer.insertSublayer(gradientLayer, at: 0)
+        descriptionView.layer.cornerRadius = descriptionView.frame.size.height/40
+        descriptionView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
+        descriptionView.layer.masksToBounds = true
     }
 }
+
+
+
+
 
 
