@@ -34,10 +34,11 @@ class DataTypesViewController: UIViewController
     
     //MARK: - Properties
     let descriptions = Description()
-    let colorOneForButton = UIColor(rgb: 0xfc4a1a)
-    let colorTwoForButton = UIColor(rgb: 0xf7b733)
     let colorOneForView = UIColor(rgb: 0x314755)
     let colorTwoForView = UIColor(rgb: 0x26a0da)
+    let colorOneForButton = UIColor(rgb: 0xfc4a1a)
+    let colorTwoForButton = UIColor(rgb: 0xf7b733)
+    
     
     //MARK: - Buttons Actions
     @IBAction func buttonPressed(_ sender: UIButton)
@@ -214,7 +215,7 @@ extension DataTypesViewController
         
         gradientBackground()
         buttonsCustomizer()
-        gradientButton()
+        gradientButton(int8ButtonLabel, colorOneForButton, colorTwoForButton)
         headerCustomizer()
     }
 }
@@ -222,24 +223,25 @@ extension DataTypesViewController
 //MARK: - Gradient buttons
 extension DataTypesViewController
 {
-    func gradientButton()
+    func gradientButton(_ buttonLabel: UIButton, _ color1: UIColor, _ color2: UIColor)
     {
-        int8ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-        int16ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-        int32ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-        int64ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-        uint8ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-        uint16ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-        uint32ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-        uint64ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-        floatButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-        doubleButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-        boolButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-        stringButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-        characterButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-        optionalButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-        tuplesButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
-        copyToClipboard.setGradientBackground(colorOneForButton, colorTwoForButton)
+        buttonLabel.setGradientBackground(color1, color2)
+//        int8ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
+//        int16ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
+//        int32ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
+//        int64ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
+//        uint8ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
+//        uint16ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
+//        uint32ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
+//        uint64ButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
+//        floatButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
+//        doubleButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
+//        boolButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
+//        stringButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
+//        characterButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
+//        optionalButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
+//        tuplesButtonLabel.setGradientBackground(colorOneForButton, colorTwoForButton)
+//        copyToClipboard.setGradientBackground(colorOneForButton, colorTwoForButton)
     }
 }
 

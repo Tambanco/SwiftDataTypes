@@ -69,8 +69,8 @@
 			children = (
 				565F0B382539EB0A000F8A20 /* AppDelegate.swift */,
 				565F0B3A2539EB0A000F8A20 /* SceneDelegate.swift */,
-				565F0B412539EB10000F8A20 /* Assets.xcassets */,
 				565F0B462539EB10000F8A20 /* Info.plist */,
+				565F0B412539EB10000F8A20 /* Assets.xcassets */,
 			);
 			path = "Supported files";
 			sourceTree = "<group>";
@@ -79,7 +79,6 @@
 			isa = PBXGroup;
 			children = (
 				565F0B372539EB0A000F8A20 /* SwiftDataTypes */,
-				4984B45A2643E0C400535F1D /* Supported files */,
 				565F0B362539EB0A000F8A20 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -98,6 +97,7 @@
 				4984B4552643E09E00535F1D /* Model */,
 				4984B4572643E0A600535F1D /* Controller */,
 				4984B4592643E0B900535F1D /* View */,
+				4984B45A2643E0C400535F1D /* Supported files */,
 			);
 			path = SwiftDataTypes;
 			sourceTree = "<group>";
