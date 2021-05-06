@@ -13,6 +13,10 @@
 		49A781B52643E8EC00BC30BA /* Convert hex to RGB.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A781B42643E8EC00BC30BA /* Convert hex to RGB.swift */; };
 		49E74DA42643FAFF00EF9963 /* Gradient View background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E74DA32643FAFF00EF9963 /* Gradient View background.swift */; };
 		49E74DA72644061A00EF9963 /* Header Customizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E74DA62644061A00EF9963 /* Header Customizer.swift */; };
+		49E74DAC2644133500EF9963 /* String with one range attributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E74DAB2644133500EF9963 /* String with one range attributor.swift */; };
+		49E74DAF2644136200EF9963 /* String with two range attributor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E74DAE2644136200EF9963 /* String with two range attributor.swift */; };
+		49E74DB22644138C00EF9963 /* Customize copyToClipboard buttton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E74DB12644138C00EF9963 /* Customize copyToClipboard buttton.swift */; };
+		49E74DB5264413B800EF9963 /* Customize description view.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49E74DB4264413B800EF9963 /* Customize description view.swift */; };
 		565F0B392539EB0A000F8A20 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565F0B382539EB0A000F8A20 /* AppDelegate.swift */; };
 		565F0B3B2539EB0A000F8A20 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565F0B3A2539EB0A000F8A20 /* SceneDelegate.swift */; };
 		565F0B3D2539EB0A000F8A20 /* DataTypesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 565F0B3C2539EB0A000F8A20 /* DataTypesViewController.swift */; };
@@ -28,6 +32,10 @@
 		49A781B42643E8EC00BC30BA /* Convert hex to RGB.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Convert hex to RGB.swift"; sourceTree = "<group>"; };
 		49E74DA32643FAFF00EF9963 /* Gradient View background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient View background.swift"; sourceTree = "<group>"; };
 		49E74DA62644061A00EF9963 /* Header Customizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Header Customizer.swift"; sourceTree = "<group>"; };
+		49E74DAB2644133500EF9963 /* String with one range attributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String with one range attributor.swift"; sourceTree = "<group>"; };
+		49E74DAE2644136200EF9963 /* String with two range attributor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String with two range attributor.swift"; sourceTree = "<group>"; };
+		49E74DB12644138C00EF9963 /* Customize copyToClipboard buttton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customize copyToClipboard buttton.swift"; sourceTree = "<group>"; };
+		49E74DB4264413B800EF9963 /* Customize description view.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Customize description view.swift"; sourceTree = "<group>"; };
 		565F0B352539EB0A000F8A20 /* SwiftDataTypes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftDataTypes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		565F0B382539EB0A000F8A20 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		565F0B3A2539EB0A000F8A20 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -93,6 +101,10 @@
 				49A781B12643E87200BC30BA /* Gradient background.swift */,
 				49A781B42643E8EC00BC30BA /* Convert hex to RGB.swift */,
 				49E74DA32643FAFF00EF9963 /* Gradient View background.swift */,
+				49E74DAB2644133500EF9963 /* String with one range attributor.swift */,
+				49E74DAE2644136200EF9963 /* String with two range attributor.swift */,
+				49E74DB12644138C00EF9963 /* Customize copyToClipboard buttton.swift */,
+				49E74DB4264413B800EF9963 /* Customize description view.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -199,12 +211,16 @@
 				49A781B22643E87200BC30BA /* Gradient background.swift in Sources */,
 				4984B43E2643D3F800535F1D /* Description.swift in Sources */,
 				49E74DA42643FAFF00EF9963 /* Gradient View background.swift in Sources */,
+				49E74DB5264413B800EF9963 /* Customize description view.swift in Sources */,
+				49E74DAC2644133500EF9963 /* String with one range attributor.swift in Sources */,
 				565F0B3D2539EB0A000F8A20 /* DataTypesViewController.swift in Sources */,
 				49E74DA72644061A00EF9963 /* Header Customizer.swift in Sources */,
 				49A781B52643E8EC00BC30BA /* Convert hex to RGB.swift in Sources */,
+				49E74DB22644138C00EF9963 /* Customize copyToClipboard buttton.swift in Sources */,
 				565F0B392539EB0A000F8A20 /* AppDelegate.swift in Sources */,
 				49A781AE2643E82000BC30BA /* Gradient buttons.swift in Sources */,
 				565F0B3B2539EB0A000F8A20 /* SceneDelegate.swift in Sources */,
+				49E74DAF2644136200EF9963 /* String with two range attributor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
