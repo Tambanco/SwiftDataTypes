@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4984333C265E7A5F007DCD5F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984333B265E7A5F007DCD5F /* MainView.swift */; };
+		49843342265E82B2007DCD5F /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49843341265E82B2007DCD5F /* Header.swift */; };
 		4984B43E2643D3F800535F1D /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984B43D2643D3F800535F1D /* Description.swift */; };
 		49A781AE2643E82000BC30BA /* Gradient buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A781AD2643E82000BC30BA /* Gradient buttons.swift */; };
 		49A781B22643E87200BC30BA /* Gradient background.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A781B12643E87200BC30BA /* Gradient background.swift */; };
@@ -38,6 +40,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4984333B265E7A5F007DCD5F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		49843341265E82B2007DCD5F /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		4984B43D2643D3F800535F1D /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		49A781AD2643E82000BC30BA /* Gradient buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient buttons.swift"; sourceTree = "<group>"; };
 		49A781B12643E87200BC30BA /* Gradient background.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient background.swift"; sourceTree = "<group>"; };
@@ -119,9 +123,9 @@
 		49A781AC2643E80900BC30BA /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				49A781B12643E87200BC30BA /* Gradient background.swift */,
 				49E74DA62644061A00EF9963 /* Header Customizer.swift */,
 				49A781AD2643E82000BC30BA /* Gradient buttons.swift */,
-				49A781B12643E87200BC30BA /* Gradient background.swift */,
 				49E74DA32643FAFF00EF9963 /* Gradient View background.swift */,
 				49E74DAB2644133500EF9963 /* String with one range attributor.swift */,
 				49E74DAE2644136200EF9963 /* String with two range attributor.swift */,
@@ -176,6 +180,8 @@
 				4984B4572643E0A600535F1D /* Controller */,
 				49A781AC2643E80900BC30BA /* Extensions */,
 				4984B45A2643E0C400535F1D /* Supported files */,
+				4984333B265E7A5F007DCD5F /* MainView.swift */,
+				49843341265E82B2007DCD5F /* Header.swift */,
 			);
 			path = SwiftDataTypes;
 			sourceTree = "<group>";
@@ -225,7 +231,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1140;
+				LastUpgradeCheck = 1240;
 				ORGANIZATIONNAME = Tambanco;
 				TargetAttributes = {
 					49B4C835265690EB00FEBFF1 = {
@@ -291,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A781B22643E87200BC30BA /* Gradient background.swift in Sources */,
+				4984333C265E7A5F007DCD5F /* MainView.swift in Sources */,
 				4984B43E2643D3F800535F1D /* Description.swift in Sources */,
 				49E74DA42643FAFF00EF9963 /* Gradient View background.swift in Sources */,
 				49E74DB5264413B800EF9963 /* Customize description view.swift in Sources */,
@@ -299,6 +306,7 @@
 				49E74DA72644061A00EF9963 /* Header Customizer.swift in Sources */,
 				49A781B52643E8EC00BC30BA /* Convert hex to RGB.swift in Sources */,
 				49E74DB22644138C00EF9963 /* Customize copyToClipboard buttton.swift in Sources */,
+				49843342265E82B2007DCD5F /* Header.swift in Sources */,
 				565F0B392539EB0A000F8A20 /* AppDelegate.swift in Sources */,
 				49A781AE2643E82000BC30BA /* Gradient buttons.swift in Sources */,
 				565F0B3B2539EB0A000F8A20 /* SceneDelegate.swift in Sources */,
@@ -404,6 +412,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -464,6 +473,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
