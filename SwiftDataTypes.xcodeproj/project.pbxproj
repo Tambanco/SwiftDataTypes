@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		4984333C265E7A5F007DCD5F /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984333B265E7A5F007DCD5F /* MainView.swift */; };
+		4984333C265E7A5F007DCD5F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984333B265E7A5F007DCD5F /* ContentView.swift */; };
 		49843342265E82B2007DCD5F /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49843341265E82B2007DCD5F /* Header.swift */; };
 		4984B43E2643D3F800535F1D /* Description.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4984B43D2643D3F800535F1D /* Description.swift */; };
 		49A781AE2643E82000BC30BA /* Gradient buttons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49A781AD2643E82000BC30BA /* Gradient buttons.swift */; };
@@ -40,7 +40,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		4984333B265E7A5F007DCD5F /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		4984333B265E7A5F007DCD5F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49843341265E82B2007DCD5F /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
 		4984B43D2643D3F800535F1D /* Description.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Description.swift; sourceTree = "<group>"; };
 		49A781AD2643E82000BC30BA /* Gradient buttons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Gradient buttons.swift"; sourceTree = "<group>"; };
@@ -180,7 +180,7 @@
 				4984B4572643E0A600535F1D /* Controller */,
 				49A781AC2643E80900BC30BA /* Extensions */,
 				4984B45A2643E0C400535F1D /* Supported files */,
-				4984333B265E7A5F007DCD5F /* MainView.swift */,
+				4984333B265E7A5F007DCD5F /* ContentView.swift */,
 				49843341265E82B2007DCD5F /* Header.swift */,
 			);
 			path = SwiftDataTypes;
@@ -297,7 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				49A781B22643E87200BC30BA /* Gradient background.swift in Sources */,
-				4984333C265E7A5F007DCD5F /* MainView.swift in Sources */,
+				4984333C265E7A5F007DCD5F /* ContentView.swift in Sources */,
 				4984B43E2643D3F800535F1D /* Description.swift in Sources */,
 				49E74DA42643FAFF00EF9963 /* Gradient View background.swift in Sources */,
 				49E74DB5264413B800EF9963 /* Customize description view.swift in Sources */,
