@@ -21,30 +21,38 @@ struct MainView: View {
     var body: some View {
         
         ZStack (alignment: .top){
-            Color.black.edgesIgnoringSafeArea(.all)
+            Color.white
+            LinearGradient(gradient: Gradient(colors: [Color("colorOneForView"), Color("colorTwoForView")]), startPoint: .topLeading, endPoint: .bottomTrailing).edgesIgnoringSafeArea(.all)
             VStack {
-                
                 Text("Swift Data Types")
                     .font(.system(size: 42))
                     .foregroundColor(.white)
                 VStack(spacing: 1.0) {
                     ForEach(buttons, id: \.self) { row in
-                        HStack {
+                        HStack(alignment: .center, spacing: 1.0) {
                             ForEach(row, id: \.self) { buttons in
                                 Text(buttons)
-                                    .font(.system(size: 32))
+                                    .lineLimit(0)
+                                    .font(.system(size: 20))
+                                    .frame(maxWidth: .infinity)
+                                    .padding()
                                     .foregroundColor(.white)
-                                    .background( LinearGradient(gradient: Gradient(colors: [Color("colorOneForView"), Color("colorTwoForView")]),
+                                    .background( LinearGradient(gradient: Gradient(colors: [Color("colorForButton1"),
+                                                                                            Color("colorForButton2")]),
                                                                 startPoint: .topLeading,
-                                                                endPoint: .bottomTrailing))
+                                                                endPoint: .bottomTrailing) )
+                                    .cornerRadius(6)
                             }
+                            
                         }
                     }
-                    
                 }
-                TextField("Placeholder", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
+                .padding(10.0)
+                TextField("", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
                     .foregroundColor(.white)
-                    .frame(width: 300, height: 80)
+                    .background(Color.white)
+                    .frame(width: .infinity)
+                    .frame(height: 300)
                 
                 Button(action: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Action@*/{}/*@END_MENU_TOKEN@*/) {
                     /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Content@*/Text("Button")/*@END_MENU_TOKEN@*/
